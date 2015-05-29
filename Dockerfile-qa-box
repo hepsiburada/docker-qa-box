@@ -1,2 +1,11 @@
 FROM hepsi-chrome-box
 
+
+ENV LANG en_US.UTF-8
+RUN locale-gen $LANG
+
+RUN sudo apt-add-repository ppa:brightbox/ruby-ng -y
+RUN apt-get update
+RUN apt-get install ruby1.9.3 freetds-dev phantomjs firefox cowsay -y
+RUN gem install bundler cucumber --verbose
+RUN bundle config build.nokogiri --use-system-libraries
