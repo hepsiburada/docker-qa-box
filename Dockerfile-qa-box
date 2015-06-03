@@ -1,4 +1,4 @@
-FROM hepsi-chrome-box
+FROM hepsiburada/qa-base-box
 
 
 ENV LANG en_US.UTF-8
@@ -7,7 +7,7 @@ RUN locale-gen $LANG
 RUN sudo apt-add-repository ppa:brightbox/ruby-ng -y
 RUN sudo apt-add-repository ppa:tanguy-patte/phantomjs -y
 RUN apt-get update
-RUN apt-get install ruby1.9.3 freetds-dev firefox cowsay zlib1g-dev unzip phantomjs qt5-default qt5-qmake libqt5webkit5-dev -y
+RUN apt-get install ruby1.9.3 freetds-dev cowsay zlib1g-dev unzip phantomjs qt5-default qt5-qmake libqt5webkit5-dev -y
 
 RUN /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
 

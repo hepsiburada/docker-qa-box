@@ -24,7 +24,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	wget \
 	xbase-clients \
 	xdg-utils \
-	xvfb
+	xvfb \
+    firefox
 
 RUN rm -rf /var/lib/apt/lists/*
 
