@@ -2,6 +2,6 @@ This box includes an automatically running gocd-agent which you can connect it t
 
 You can run it by ;
 
-$docker run -ti -d -e GO_SERVER=ci.hepsiburada.com hepsi-qa-box
+$docker run -ti -d -e GO_SERVER=ci.hepsiburada.com hepsiburada/docker-qa-box
 
 and it will register itself in pending state to the ci server you have provided. Than you can enable and assign to an environment manually.
