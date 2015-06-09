@@ -5,7 +5,6 @@ RUN locale-gen $LANG
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-add-repository ppa:brightbox/ruby-ng -y
-RUN apt-add-repository ppa:tanguy-patte/phantomjs -y
 RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive \
