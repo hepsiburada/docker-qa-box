@@ -1,4 +1,4 @@
-FROM hepsiburada/qa-base-box
+FROM registry-hub.hepsiburada.com:5000/qa-base-box
 
 ENV LANG en_US.UTF-8
 RUN locale-gen $LANG
