@@ -1,0 +1,8 @@
+---
+- name: Configuring Docker
+  hosts: all
+  sudo: False
+
+  tasks:
+
+     - include: tasks/docker.yml
